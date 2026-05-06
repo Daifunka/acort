@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Urbanist:wght@300;400;500;600;700;800&display=swap');
+
+$primary: #4582FF;
+$secondary: #7A5AF8;
+$brand-green: #39B54A;
+$dark: #0F172A;
+$font-family-base: 'Urbanist', sans-serif;
+$headings-font-family: 'Outfit', sans-serif;
+$headings-font-weight: 700;
+
+@import "bootstrap/scss/bootstrap";
+
+h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  font-family: $headings-font-family !important;
+}
+
+body {
+  font-family: $font-family-base !important;
+  background-color: #FAFBFF;
+  color: #1E293B;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom premium utilities */
+.text-gradient {
+  background: linear-gradient(135deg, $primary 0%, $secondary 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, $primary 0%, $secondary 100%);
+}
+
+.text-brand-green {
+  color: $brand-green !important;
+}
+
+.bg-brand-green {
+  background-color: $brand-green !important;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, $primary 0%, #316be6 100%);
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 20px rgba($primary, 0.2);
+  
+  &:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 25px rgba($primary, 0.3);
+    background: linear-gradient(135deg, #5c91ff 0%, $primary 100%);
+  }
+}
+
+.btn-outline-primary {
+  border: 2px solid $primary;
+  color: $primary;
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 0.65rem 1.5rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $primary;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba($primary, 0.2);
+  }
+}
+
+/* AOS Tweaks */
+[data-aos] {
+  transition-duration: 800ms;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Animations globales */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+  0% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(1.05); }
+  100% { opacity: 0.15; transform: scale(1); }
+}
