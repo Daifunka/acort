@@ -2,8 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import { servicesData } from '../data/services'
 
-// Exclure le BTP car il a une page dédiée immersive
-const standardServices = servicesData.filter(s => s.slug !== 'batiment-et-travaux-publics')
+// Exclure le BTP et la formation aviation car ils ont des pages dédiées immersives
+const standardServices = servicesData.filter(s => 
+  s.slug !== 'batiment-et-travaux-publics' && 
+  s.slug !== 'formation-professionnelle-en-aviation'
+)
 
 // Générer les routes dynamiquement basées sur les slugs des services standards
 const serviceRoutes = standardServices.map(service => ({
@@ -24,6 +27,11 @@ const router = createRouter({
       path: '/batiment-et-travaux-publics',
       name: 'service-btp',
       component: () => import('../views/BtpServiceView.vue')
+    },
+    {
+      path: '/formation-professionnelle-en-aviation',
+      name: 'service-aviation',
+      component: () => import('../views/AviationServiceView.vue')
     },
     {
       path: '/qui-sommes-nous',

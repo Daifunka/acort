@@ -14,15 +14,15 @@
         <div class="row align-items-center h-100">
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
             <div class="d-inline-flex align-items-center rounded-pill bg-white px-3 py-2 mb-4 shadow-sm border border-light animate-badge">
-              <span class="badge bg-brand-green rounded-pill me-2 px-3">Nouveau</span>
-              <span class="small fw-bold text-secondary">Découvrez notre plateforme d'E-learning</span>
+              <span class="badge bg-brand-green rounded-pill me-2 px-3">Expertise</span>
+              <span class="small fw-bold text-secondary">Solutions Stratégiques & Conseil Multisectoriel</span>
             </div>
             <h1 class="hero-title fw-black mb-4 lh-sm">
-              Propulsez votre <br>
-              <span class="text-gradient">Carrière</span> & <span class="text-gradient">Entreprise</span>
+              L'Excellence au service de votre <br>
+              <span class="text-gradient">Transformation</span>
             </h1>
             <p class="lead mb-5 text-muted" style="max-width: 500px; font-size: 1.15rem; line-height: 1.7;">
-              Acort Consulting vous accompagne vers l'excellence avec des solutions sur mesure en stratégie, audit, et formation professionnelle.
+              ACoRT Consulting accompagne les entreprises et les professionnels vers la performance avec des solutions sur mesure en stratégie, audit et expertise industrielle.
             </p>
             <div class="d-flex flex-wrap gap-3">
               <router-link to="/qui-sommes-nous" class="btn btn-primary btn-lg shadow-lg">Découvrir l'Expertise</router-link>
@@ -32,14 +32,14 @@
             <!-- Quick Trust Indicators -->
             <div class="d-flex align-items-center mt-5 pt-4">
               <div class="d-flex me-3 avatars-group">
-                <div class="avatar-sm rounded-circle bg-primary text-white d-flex align-items-center justify-content-center border border-3 border-white">JS</div>
-                <div class="avatar-sm rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center border border-3 border-white" style="background-color: #7A5AF8 !important;">MK</div>
+                <div class="avatar-sm rounded-circle bg-primary text-white d-flex align-items-center justify-content-center border border-3 border-white">AC</div>
+                <div class="avatar-sm rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center border border-3 border-white" style="background-color: #7A5AF8 !important;">RT</div>
                 <div class="avatar-sm rounded-circle bg-dark text-white d-flex align-items-center justify-content-center border border-3 border-white">+</div>
               </div>
               <div>
-                <div class="fw-bold fs-6">1500+ Apprenants</div>
+                <div class="fw-bold fs-6">15+ Ans d'Expertise</div>
                 <div class="small text-muted d-flex align-items-center">
-                  <span class="text-warning me-1">★★★★★</span> Avis vérifiés
+                  <span class="text-primary me-1">✓</span> Partenaire de confiance
                 </div>
               </div>
             </div>
@@ -74,10 +74,10 @@
               
               <!-- Floating Element 1 -->
               <div class="glass-panel floating-card-1 p-3 rounded-4 shadow-lg position-absolute d-flex align-items-center z-index-3">
-                <div class="icon-box bg-brand-green bg-opacity-10 text-brand-green rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-size: 1.2rem;">📈</div>
+                <div class="icon-box bg-brand-green bg-opacity-10 text-brand-green rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-size: 1.2rem;">🏆</div>
                 <div>
-                  <div class="small text-muted fw-bold">Taux de Réussite</div>
-                  <div class="fw-black fs-5 text-dark">98.5%</div>
+                  <div class="small text-muted fw-bold">Expertise</div>
+                  <div class="fw-black fs-5 text-dark">Certifiée</div>
                 </div>
               </div>
 
@@ -85,9 +85,9 @@
               <div class="glass-panel floating-card-2 p-3 rounded-4 shadow-lg position-absolute z-index-3">
                 <div class="d-flex align-items-center mb-2">
                    <div class="spinner-grow spinner-grow-sm text-primary me-2" role="status"></div>
-                   <span class="small fw-bold text-dark">Live Session</span>
+                   <span class="small fw-bold text-dark">Audit & Conseil</span>
                 </div>
-                <div class="small text-muted">Formation Leadership</div>
+                <div class="small text-muted">Optimisation Opérationnelle</div>
               </div>
             </div>
           </div>
@@ -297,9 +297,9 @@
                     <div class="stat-icon-wrapper rounded-4 p-3 me-3" style="background: rgba(255, 193, 7, 0.1); color: #ffc107;">
                       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                     </div>
-                    <h2 class="display-5 fw-black text-white mb-0 counter">9</h2>
+                    <h2 class="display-5 fw-black text-white mb-0 counter">12</h2>
                   </div>
-                  <h6 class="text-white opacity-50 text-uppercase tracking-wider fw-bold small">Cours disponibles</h6>
+                  <h6 class="text-white opacity-50 text-uppercase tracking-wider fw-bold small">Domaines d'Expertise</h6>
                 </div>
               </div>
 
@@ -380,9 +380,9 @@ export default {
         { name: 'Sarah Lefebvre', role: 'Responsable Qualité', initials: 'SL', text: 'Une approche très professionnelle et des résultats concrets. Nous recommandons vivement Acort Consulting pour tout projet d\'audit.' }
       ],
       heroSlides: [
-        { url: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80', alt: 'Expertise Acort' },
-        { url: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80', alt: 'Formation Technique' },
-        { url: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80', alt: 'Conseil Stratégique' }
+        { url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80', alt: 'Conseil Stratégique' },
+        { url: 'https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&w=800&q=80', alt: 'BTP & Infrastructure' },
+        { url: 'https://images.unsplash.com/photo-1520437358207-323b43b50729?auto=format&fit=crop&w=800&q=80', alt: 'Expertise Aviation' }
       ]
     }
   },
